@@ -1,0 +1,11 @@
+{
+  "name": "4_day",
+  "version": "1.0.0",
+  "description": "[Wes Bos JavaScript 30 days challenge](https://www.youtube.com/watch?v=HB1ZC7czKRs&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH&index=4) \r day 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rich_Catt",
+  "license": "ISC"
+}
