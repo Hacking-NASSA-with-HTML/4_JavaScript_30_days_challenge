@@ -35,14 +35,22 @@ const people = [
 // });
 
 // with arrow function
-const fifteen = inventors.filter(x => (x.year >= 1500 && x.year < 1800));
+// const fifteen = inventors.filter(x => (x.year >= 1500 && x.year < 1800));
 
 
-console.table(fifteen);
+// console.table(fifteen);
 
 
 // Array.prototype.map()
 // 2. Give us an array of the inventors first and last names
+
+// with vanilla js
+//const fullNameList = inventors.map(inventor => inventor.first + ' ' + inventor.last);
+
+// with ES6 syntax
+const fullNameList = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
+console.log(fullNameList);
+
 
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
