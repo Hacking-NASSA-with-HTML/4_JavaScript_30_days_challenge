@@ -22,7 +22,8 @@ const people = [
 ];
 
 
-//console.log('Hi, Rich Catt!');
+
+
 
 // Array.prototype.filter()
 // 1. Filter the list of inventors for those who were born in the 1500's
@@ -50,6 +51,9 @@ const people = [
 // with ES6 syntax
 const fullNameList = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
 console.log(fullNameList);
+
+
+console.log('Hi, Rich Catt!');
 
 
 // Array.prototype.sort()
