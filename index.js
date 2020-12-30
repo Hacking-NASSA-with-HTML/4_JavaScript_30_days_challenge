@@ -99,7 +99,9 @@ const totalYears = inventors.reduce((total, inventor) => {
     return total + (inventor.passed - inventor.year);
 }, 0);
 
+
 console.log(totalYears);
+
 
 // 5. Sort the inventors by years lived
 
