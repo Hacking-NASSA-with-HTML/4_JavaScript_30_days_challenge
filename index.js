@@ -25,7 +25,7 @@ const people = [
 
 
 
-// Array.prototype.filter()
+// Array.prototype.filter()  **************************************************
 // 1. Filter the list of inventors for those who were born in the 1500's
 
 // with vanilla js
@@ -45,7 +45,7 @@ const people = [
 
 
 
-// Array.prototype.map()
+// Array.prototype.map()     **************************************************
 // 2. Give us an array of the inventors first and last names
 
 // with vanilla js
@@ -61,7 +61,7 @@ const people = [
 
 
 
-// Array.prototype.sort()
+// Array.prototype.sort()      ************************************************
 // 3. Sort the inventors by birthdate, oldest to youngest
 
 // with vanilla js
@@ -83,7 +83,7 @@ const people = [
 
 
 
-// Array.prototype.reduce()
+// Array.prototype.reduce()             ***************************************
 // 4. How many years did all the inventors live all together?
 
 // with vanilla js
@@ -102,7 +102,7 @@ const people = [
 // console.log(totalYears);
 
 
-// 5. Sort the inventors by years lived
+// 5. Sort the inventors by years lived ***************************************
 console.log('Hi, Rich Catt! 5th task');
 // with vanilla js
 // const oldest = inventors.sort(function (a, b) {
