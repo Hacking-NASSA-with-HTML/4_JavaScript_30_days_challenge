@@ -137,11 +137,18 @@ console.log('Hi, Rich Catt! 6th task');
 
 const Category = document.querySelector('.mw-category');
 // First variant
-const links = Array.from(Category.querySelectorAll('a'));
+//const links = Array.from(Category.querySelectorAll('a'));
+
 // Second variant with SPREAD OPERATOR
 //const links = [...Category.querySelectorAll('a')];
-
 //const de = links.map(link => link.textContent);
+// with added .map() and .filter() methods in 'one' line
+// const de = links
+//     .map(link => link.textContent)
+//     .filter(streetName => streetName.includes('de'));
+
+// Third variant, very concise, works without line 138
+const links = [...document.querySelectorAll('.mw-category a')];
 const de = links
     .map(link => link.textContent)
     .filter(streetName => streetName.includes('de'));
