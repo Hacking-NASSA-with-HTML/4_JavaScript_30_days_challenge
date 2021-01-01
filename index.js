@@ -138,7 +138,7 @@ console.log('Hi, Rich Catt! 6th task');
 const Category = document.querySelector('.mw-category');
 // First variant
 const links = Array.from(Category.querySelectorAll('a'));
-// Second variant SPREAD OPERATOR
+// Second variant with SPREAD OPERATOR
 //const links = [...Category.querySelectorAll('a')];
 
 //const de = links.map(link => link.textContent);
