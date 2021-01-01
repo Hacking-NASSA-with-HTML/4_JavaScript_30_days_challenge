@@ -134,7 +134,7 @@ const people = [
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 console.log('Hi, Rich Catt! 6th task');
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
-// https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+
 const Category = document.querySelector('.mw-category');
 // First variant
 const links = Array.from(Category.querySelectorAll('a'));
