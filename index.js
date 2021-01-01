@@ -103,7 +103,7 @@ const people = [
 
 
 // 5. Sort the inventors by years lived ***************************************
-console.log('Hi, Rich Catt! 5th task');
+
 // with vanilla js
 // const oldest = inventors.sort(function (a, b) {
 //     const last_Guy = a.passed - a.year;
@@ -117,22 +117,35 @@ console.log('Hi, Rich Catt! 5th task');
 // });
 
 // with ES6 syntax
-const oldest = inventors.sort(function (a, b) {
-    const last_Guy = a.passed - a.year;
-    const next_Guy = b.passed - a.year;
+// const oldest = inventors.sort(function (a, b) {
+//     const last_Guy = a.passed - a.year;
+//     const next_Guy = b.passed - a.year;
 
-    return last_Guy > next_Guy ? -1 : 1;
-});
+//     return last_Guy > next_Guy ? -1 : 1;
+// });
 
 
-console.table(oldest);
+// console.table(oldest);
 
 
 
 
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
+console.log('Hi, Rich Catt! 6th task');
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+// https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+const Category = document.querySelector('.mw-category');
+// First variant
+const links = Array.from(Category.querySelectorAll('a'));
+// Second variant SPREAD OPERATOR
+//const links = [...Category.querySelectorAll('a')];
+
+//const de = links.map(link => link.textContent);
+const de = links
+    .map(link => link.textContent)
+    .filter(streetName => streetName.includes('de'));
+
 
 
 // 7. sort Exercise
