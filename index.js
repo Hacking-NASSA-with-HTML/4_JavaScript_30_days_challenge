@@ -132,10 +132,11 @@ const people = [
 
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
-console.log('Hi, Rich Catt! 6th task');
+
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
-const Category = document.querySelector('.mw-category');
+//const Category = document.querySelector('.mw-category');
+
 // First variant
 //const links = Array.from(Category.querySelectorAll('a'));
 
@@ -148,17 +149,48 @@ const Category = document.querySelector('.mw-category');
 //     .filter(streetName => streetName.includes('de'));
 
 // Third variant, very concise, works without line 138
-const links = [...document.querySelectorAll('.mw-category a')];
-const de = links
-    .map(link => link.textContent)
-    .filter(streetName => streetName.includes('de'));
+// const links = [...document.querySelectorAll('.mw-category a')];
+// const de = links
+//     .map(link => link.textContent)
+//     .filter(streetName => streetName.includes('de'));
 
 
 
 
 
 // 7. sort Exercise
-// Sort the people alphabetically by last name
+// console.log('Hi, Rich Catt! 7th task');
+// // Sort the people alphabetically by last name
+
+// const lastNameSorted = people.sort(function (lastName, firstName) {
+//     // const parts = lastName.split(', ');
+//     // console.log(parts);
+
+
+//     const [last, first] = lastName.split(', ');
+//     console.log(last, first)
+// });
+
+// with ES6 syntax
+// const alpha = people.sort(function (lastName, firstName) {
+//     const [aLast, aFirst] = lastName.split(', ');
+//     const [bLast, bFirst] = firstName.split(', ');
+//     return aLast > bLast ? 1 : -1;
+// });
+
+// with arrow function
+const alpha = people.sort((lastName, firstName) => {
+    const [aLast, aFirst] = lastName.split(', ');
+    const [bLast, bFirst] = firstName.split(', ');
+    return aLast > bLast ? 1 : -1;
+});
+
+
+console.log(alpha);
+
+
+
+
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
