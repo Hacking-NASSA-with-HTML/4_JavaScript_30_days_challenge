@@ -224,4 +224,5 @@ const transport = data.reduce((obj, item) => {
     return obj;
 }, {});
 
+
 console.log(transport);
