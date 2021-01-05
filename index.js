@@ -193,18 +193,30 @@ const people = [
 
 
 // 8. Reduce Exercise
-console.log('Hi, Rich Catt! 8th task');
-// Sum up the instances of each of these
-const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike',
-    'walk', 'car', 'van', 'some_shit_car', 'car', 'truck', 'some_shit_car'];
+// console.log('Hi, Rich Catt! 8th task');
+// // Sum up the instances of each of these
+// const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike',
+//     'walk', 'car', 'van', 'some_shit_car', 'car', 'truck', 'some_shit_car'];
 
-// with vanilla js
-// const transport = data.reduce(function (obj, item) {
-//     console.log(item);
-//     return obj;
-// }, {});
+// // with vanilla js
+// // const transport = data.reduce(function (obj, item) {
+// //     console.log(item);
+// //     return obj;
+// // }, {});
 
-// const transport = data.reduce(function (obj, item) {
+// // const transport = data.reduce(function (obj, item) {
+// //     if (!obj[item]) {
+// //         obj[item] = 0;
+// //     }
+// //     obj[item]++;
+// //     return obj;
+// // }, {});
+
+// // console.log(transport);
+
+// // with ES6 syntax
+
+// const transport = data.reduce((obj, item) => {
 //     if (!obj[item]) {
 //         obj[item] = 0;
 //     }
@@ -212,17 +224,19 @@ const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bik
 //     return obj;
 // }, {});
 
+
 // console.log(transport);
 
-// with ES6 syntax
-
-const transport = data.reduce((obj, item) => {
-    if (!obj[item]) {
-        obj[item] = 0;
-    }
-    obj[item]++;
-    return obj;
-}, {});
 
 
-console.log(transport);
+
+
+/******************** Starting to work with FETCH() *************************/
+console.log('Hi, Rich Catt! FETCH() method');
+
+const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+
+const cities = [];
+
+const prom = fetch(endpoint);
+console.log(prom);
