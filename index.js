@@ -232,6 +232,10 @@ const people = [
 
 
 /******************** Starting to work with FETCH() *************************/
+/** This works only with index.html file */
+/** because fetch does not exist in Node.js - it's a Browser API. There are
+ * Node libraries such as node-fetch and isomorphic-fetch that you can use
+ * to fetch HTTP endpoints in your Terminal. */
 console.log('Hi, Rich Catt! FETCH() method');
 
 const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
